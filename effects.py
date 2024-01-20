@@ -35,8 +35,3 @@ def grayscale(input_video, output_file):
             logger.info(f'Video succesfully filter with with grayscale')
     except Exception as e:
         raise e
-
-
-if __name__ == '__main__':
-    import sys
-    vintage(sys.argv[1], sys.argv[2])
