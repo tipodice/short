@@ -67,6 +67,6 @@ if __name__ == '__main__':
     # Read input text file
     with open(args.input_text, 'r') as file:
         input_text_content = file.read()
-
-    fxs = args.fx.strip().split(',')
+    
+    fxs = args.fx.strip().split(',') if args.fx else None
     main(input_text=input_text_content, topic=args.topic, fx=fxs)
